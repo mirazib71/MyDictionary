@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fef1c9"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="#bcf7dc"
+        android:id="@+id/relativeLayout1"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#c1f6f4"
+            android:text="TextView"
+            android:textAlignment="center"
+
+            android:textColor="#2e036d"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginEnd="48dp"
+        android:layout_toStartOf="@+id/btn_next"
+        android:background="#f0f7f5">
+
+
+        <TextView
+            android:id="@+id/tv_point_wrong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="14dp"
+            android:text="00"
+            android:textColor="#b20303"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_point_correct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_point_wrong"
+            android:layout_alignBottom="@+id/tv_point_wrong"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="14dp"
+            android:text="00"
+            android:textColor="#035e05"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="295dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#e4dae9"
+        android:id="@+id/relativeLayout3"
+        >
+
+
+        <CheckedTextView
+            android:id="@+id/ctv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:background="#f4e9f9"
+            android:checkMarkTint="@color/colorPrimary"
+            android:checked="false"
+            android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"
+            android:text="CheckedTextView"
+            android:textSize="18sp" />
+
+        <CheckedTextView
+            android:id="@+id/ctv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/ctv1"
+            android:layout_below="@+id/ctv1"
+            android:layout_marginTop="20dp"
+            android:background="#f4e9f9"
+
+            android:checkMarkTint="@color/colorPrimary"
+            android:checked="false"
+            android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"
+            android:text="CheckedTextView"
+            android:textSize="18sp"
+
+
+            />
+
+        <CheckedTextView
+            android:id="@+id/ctv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/ctv2"
+            android:layout_below="@+id/ctv2"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:background="#f4e9f9"
+            android:checkMarkTint="@color/colorPrimary"
+
+
+            android:checked="false"
+            android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"
+            android:text="CheckedTextView"
+            android:textSize="18sp" />
+
+        <CheckedTextView
+            android:id="@+id/ctv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/ctv3"
+            android:layout_below="@+id/ctv3"
+            android:layout_marginTop="20dp"
+            android:background="#f4e9f9"
+            android:checkMarkTint="@color/colorPrimary"
+            android:checked="false"
+            android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"
+            android:text="CheckedTextView"
+            android:textSize="18sp"
+
+
+            />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/relativeLayout3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="23dp"
+        android:text="next" />
+
+
+</RelativeLayout>
